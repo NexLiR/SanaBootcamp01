@@ -1,0 +1,16 @@
+﻿@model WelcomeToMySite
+@{
+    ViewData["Title"] = "Main Page";
+}
+
+<div class="container-fluid width-100 flex-center flex-col">
+    <h1>Hello!</h1>
+    <form method="post" asp-asp-controller="Home" asp-action="Check" class="container-fluid flex-center flex-col">
+        <div class="container-fluid flex-center flex-col">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" />
+            <span asp-validation-for="Name"></span>
+        </div>
+        <input type="submit" value="Sumbit"/>
+    </form>
+</div>

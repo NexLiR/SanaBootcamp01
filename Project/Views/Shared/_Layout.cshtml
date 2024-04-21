@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body class="container-fluid">
+    <header class="container-fluid justify-space-between flex-center">
+        <h1 class="">Sana Bootcamp `24</h1>
+        <nav class="navbar">
+            <a class="navbar-item" href="/home/">Main page</a>
+        </nav>
+    </header>
+    <main class="container-fluid">
+        @RenderBody()
+    </main>
+    <footer class="container-fluid justify-end flex-center">
+        <p class="footer-text">Created by: Vlad Shevcuk</p>
+        <p class="footer-text">E-mail: vsevcuk111@gmail.com</p>
+    </footer>
+</body>
+</html>
